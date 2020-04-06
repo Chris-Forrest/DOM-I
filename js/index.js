@@ -50,5 +50,16 @@ navLinks[3].textContent = siteContent.nav['nav-item-4']
 navLinks[4].textContent = siteContent.nav['nav-item-5']
 navLinks[5].textContent = siteContent.nav['nav-item-6']
 
+const h1 = document.querySelector("h1")
+h1.textContent = siteContent.cta['h1']
+const bttn = document.querySelector("button")
+bttn.textContent = siteContent.cta['button']
+const roundImage = document.getElementById("cta-img")
+roundImage.setAttribute('src', siteContent["cta"]["img-src"])
 
-
+const h4s = document.querySelectorAll('h4')
+h4s[0].textContent = siteContent["main-content"]["features-h4"]
+h4s[1].textContent = siteContent["main-content"]["about-h4"]
+h4s[2].textContent = siteContent["main-content"]["services-h4"]
+h4s[3].textContent = siteContent["main-content"]["product-h4"]
+h4s[4].textContent = siteContent["main-content"]["vision-h4"]
