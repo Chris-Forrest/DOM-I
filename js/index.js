@@ -63,6 +63,7 @@ h4s[1].textContent = siteContent["main-content"]["about-h4"]
 h4s[2].textContent = siteContent["main-content"]["services-h4"]
 h4s[3].textContent = siteContent["main-content"]["product-h4"]
 h4s[4].textContent = siteContent["main-content"]["vision-h4"]
+h4s[5].textContent = siteContent["contact"]["contact-h4"]
 
 const longImage = document.getElementById("middle-img")
 longImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
@@ -73,4 +74,9 @@ paragraphs[1].textContent = siteContent["main-content"]["about-content"]
 paragraphs[2].textContent = siteContent["main-content"]["services-content"]
 paragraphs[3].textContent = siteContent["main-content"]["product-content"]
 paragraphs[4].textContent = siteContent["main-content"]["vision-content"]
+paragraphs[5].textContent = siteContent["contact"]["address"]
+paragraphs[6].textContent = siteContent["contact"]["phone"]
+paragraphs[7].textContent = siteContent["contact"]["email"]
+paragraphs[8].textContent = siteContent["footer"]["copyright"]
+
 
