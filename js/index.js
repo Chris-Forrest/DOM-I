@@ -40,3 +40,57 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+let navLinks = document.querySelectorAll('nav a')
+navLinks[0].textContent = siteContent.nav['nav-item-1']
+navLinks[1].textContent = siteContent.nav['nav-item-2']
+navLinks[2].textContent = siteContent.nav['nav-item-3']
+navLinks[3].textContent = siteContent.nav['nav-item-4']
+navLinks[4].textContent = siteContent.nav['nav-item-5']
+navLinks[5].textContent = siteContent.nav['nav-item-6']
+
+const h1 = document.querySelector("h1")
+h1.textContent = siteContent.cta['h1']
+const bttn = document.querySelector("button")
+bttn.textContent = siteContent.cta['button']
+const roundImage = document.getElementById("cta-img")
+roundImage.setAttribute('src', siteContent["cta"]["img-src"])
+
+const h4s = document.querySelectorAll('h4')
+h4s[0].textContent = siteContent["main-content"]["features-h4"]
+h4s[1].textContent = siteContent["main-content"]["about-h4"]
+h4s[2].textContent = siteContent["main-content"]["services-h4"]
+h4s[3].textContent = siteContent["main-content"]["product-h4"]
+h4s[4].textContent = siteContent["main-content"]["vision-h4"]
+h4s[5].textContent = siteContent["contact"]["contact-h4"]
+
+const longImage = document.getElementById("middle-img")
+longImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+const paragraphs = document.querySelectorAll('p')
+paragraphs[0].textContent = siteContent["main-content"]["features-content"]
+paragraphs[1].textContent = siteContent["main-content"]["about-content"]
+paragraphs[2].textContent = siteContent["main-content"]["services-content"]
+paragraphs[3].textContent = siteContent["main-content"]["product-content"]
+paragraphs[4].textContent = siteContent["main-content"]["vision-content"]
+paragraphs[5].textContent = siteContent["contact"]["address"]
+paragraphs[6].textContent = siteContent["contact"]["phone"]
+paragraphs[7].textContent = siteContent["contact"]["email"]
+paragraphs[8].textContent = siteContent["footer"]["copyright"]
+
+
+Array.from(navLinks).forEach(link =>{
+  link.style.color = 'green';
+})
+
+const navStuff = document.querySelector('nav')
+let endOfLinks = document.createElement('a')
+endOfLinks.textContent = "Last"
+endOfLinks.style.color= 'green'
+navStuff.appendChild(endOfLinks)
+
+let firstLink = document.createElement('a')
+firstLink.textContent = "First"
+firstLink.style.color = 'green'
+navStuff.prepend(firstLink)
