@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
-const navLinks = document.querySelectorAll('nav a')
+let navLinks = document.querySelectorAll('nav a')
 navLinks[0].textContent = siteContent.nav['nav-item-1']
 navLinks[1].textContent = siteContent.nav['nav-item-2']
 navLinks[2].textContent = siteContent.nav['nav-item-3']
@@ -80,3 +80,17 @@ paragraphs[7].textContent = siteContent["contact"]["email"]
 paragraphs[8].textContent = siteContent["footer"]["copyright"]
 
 
+Array.from(navLinks).forEach(link =>{
+  link.style.color = 'green';
+})
+
+const navStuff = document.querySelector('nav')
+let endOfLinks = document.createElement('a')
+endOfLinks.textContent = "Last"
+endOfLinks.style.color= 'green'
+navStuff.appendChild(endOfLinks)
+
+let firstLink = document.createElement('a')
+firstLink.textContent = "First"
+firstLink.style.color = 'green'
+navStuff.prepend(firstLink)
